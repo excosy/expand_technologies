@@ -36,13 +36,11 @@ technologies = {
 			cv_early_fighter
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
+			#WEIGHT
+			modifier = { factor = 150 EAI_FTR_tech_focus = yes }
 		}
 	}
 
@@ -60,27 +58,20 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = fighter1
-					is_researching_technology = fighter1
-				}
-			}
-			modifier = {
-				factor = 3
-				has_navy_size = { type = carrier size > 3 }# if nation has several carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+		ai_will_do = { #EAI
+			factor = 0
 		}
 	}
 
 	fighter1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: fighter1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_FTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			fighter_equipment_1
@@ -109,37 +100,27 @@ technologies = {
 			cv_fighter1
 		}
 
-		ai_will_do = {
-			factor = 4
+		ai_will_do = { #EAI
+			factor = 10
 
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
+			#WEIGHT
+			modifier = { factor = 10 date > 1936.6.1 }
+			modifier = { factor = 15 OR = { is_major = yes num_of_military_factories > 25 date > 1940.1.1 } }
 
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1940.1.1"
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0.01 NOT = { EAI_FTR_tech_focus = yes } }
 		}
 	}
 
 	cv_fighter1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: cv_fighter1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CVFTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			cv_fighter_equipment_1
@@ -153,39 +134,31 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 2
-				tag = USA
-			}
+			#WEIGHT
+			modifier = { factor = 10 EAI_CV_tech_focus = yes }
+			modifier = { factor = 4 num_of_military_factories > 25 }
 
-			modifier = {
-				factor = 2
-				tag = JAP
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier } }
 
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = fighter2
-					is_researching_technology = fighter2
-				}
-			}
+			modifier = { factor = 0 has_tech = fighter2 }
 
-			modifier = {
-				factor = 2.5
-				has_navy_size = { type = carrier size > 3 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+			modifier = { factor = 0 original_tag = JAP } #jap gets a free cvftr2
 		}
 	}
 
 	fighter2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: fighter2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_FTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			fighter_equipment_2
@@ -218,43 +191,30 @@ technologies = {
 			cv_fighter2
 		}
 
-		ai_will_do = {
-			factor = 4
+		ai_will_do = { #EAI
+			factor = 10
 
-			modifier = {
-				factor = 4
-				is_major = yes
-			}
+			#DATE
+			modifier = { factor = 0 date < 1939.1.1 NOT = { EAI_fighter_tech_bonus = yes } }
+			modifier = { factor = 0 date < 1938.1.1 EAI_fighter_tech_bonus = yes }
 
-			modifier = {
-				factor = 0
-				original_tag = GER
-				date < "1941.1.1"
-			}
+			#WEIGHT
+			modifier = { factor = 30 OR = { is_major = yes num_of_military_factories > 25 date > 1940.1.1 } }
 
-			modifier = {
-				factor = 1.2
-				date > "1941.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1942.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1944.1.1"
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0.01 NOT = { EAI_FTR_tech_focus = yes } }
 		}
 	}
 
 	cv_fighter2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: cv_fighter2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CVFTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			cv_fighter_equipment_2
@@ -268,50 +228,35 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 2
-				tag = USA
-			}
+			#DATE
+			modifier = { factor = 0 date < 1940.1.1 }
 
-			modifier = {
-				factor = 2.5
-				tag = JAP
-			}
+			#WEIGHT
+			modifier = { factor = 10 EAI_CV_tech_focus = yes }
+			modifier = { factor = 4 num_of_military_factories > 25 }
+			modifier = { factor = 4 has_navy_size = { size > 6 unit = carrier } }
 
-			modifier = {
-				factor = 10
-				AND = {
-					is_historical_focus_on = yes
-					tag = JAP
-				}
-			}
-			modifier = {
-				factor = 1.5
-				date > "1941.6.1"
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier } }
 
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = fighter3
-					is_researching_technology = fighter3
-				}
-			}
-			modifier = {
-				factor = 2.5
-				has_navy_size = { type = carrier size > 3 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+			modifier = { factor = 0 has_tech = fighter3 date < 1943.6.1 }
+
+			modifier = { factor = 0 original_tag = JAP } #jap gets a free cvftr2
 		}
 	}
 
 	fighter3 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: fighter3" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_FTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			fighter_equipment_3
@@ -340,37 +285,30 @@ technologies = {
 			cv_fighter3
 		}
 
-		ai_will_do = {
-			factor = 4
+		ai_will_do = { #EAI
+			factor = 10
 
-			modifier = {
-				factor = 4
-				is_major = yes
-			}
+			#DATE
+			modifier = { factor = 0 date < 1943.6.1 NOT = { EAI_fighter_tech_bonus = yes } }
+			modifier = { factor = 0 date < 1942.1.1 EAI_fighter_tech_bonus = yes }
 
-			modifier = {
-				factor = 1.2
-				date > "1945.1.1"
-			}
+			#WEIGHT
+			modifier = { factor = 30 OR = { is_major = yes num_of_military_factories > 25 date > 1940.1.1 } }
 
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1947.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1948.1.1"
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0.01 NOT = { EAI_FTR_tech_focus = yes } }
 		}
 	}
 
 	cv_fighter3 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: cv_fighter3" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CVFTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			cv_fighter_equipment_3
@@ -384,34 +322,30 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 2
-				tag = USA
-			}
+			#DATE
+			modifier = { factor = 0 date < 1944.1.1 }
 
-			modifier = {
-				factor = 2
-				tag = JAP
-			}
-			modifier = {
-				factor = 1.5
-				date > "1945.1.1"
-			}
-			modifier = {
-				factor = 2.5
-				has_navy_size = { type = carrier size > 3 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+			#WEIGHT
+			modifier = { factor = 10 EAI_CV_tech_focus = yes }
+			modifier = { factor = 4 num_of_military_factories > 25 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier } }
 		}
 	}
 
 	jet_fighter1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: jet_fighter1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_JFTR = yes }
+			}
+		}
 
 		enable_equipments = {
 				jet_fighter_equipment_1
@@ -437,22 +371,29 @@ technologies = {
 		categories = {
 			light_air
 			jet_technology
+			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				tag = GER
-				factor = 2
-			}
+		ai_will_do = { #EAI
+			factor = 10
+
+			#DATE
+			modifier = { factor = 0 date < 1948.1.1 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_FTR_tech_focus = yes } }
 		}
 	}
 
 	jet_fighter2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: jet_fighter2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_JFTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			jet_fighter_equipment_2
@@ -469,14 +410,29 @@ technologies = {
 		categories = {
 			light_air
 			jet_technology
+			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
+		ai_will_do = { #EAI
+			factor = 10
+
+			#DATE
+			modifier = { factor = 0 date < 1950.1.1 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_FTR_tech_focus = yes } }
 		}
 	}
 
 	CAS1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: CAS1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CAS = yes }
+			}
+		}
 
 		enable_equipments = {
 			CAS_equipment_1
@@ -505,24 +461,15 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
+		ai_will_do = { #EAI
+			factor = 10
 
-			modifier = {
-				factor = 2
-				tag = GER
-			}
+			#WEIGHT
+			modifier = { factor = 10 num_of_military_factories > 25 date > 1937.1.1 }
 
-			modifier = {
-				factor = 100
-				tag = SOV
-			}
-			modifier = {
-				has_war_with = GER
-				tag = SOV
-				factor = 2
-			}
-
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_CAS_tech_focus = yes } }
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter1 is_researching_technology = fighter1 } }
 		}
 	}
 
@@ -540,41 +487,20 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = CAS2
-					is_researching_technology = CAS2
-				}
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					tag = USA
-					tag = JAP
-				}
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+		ai_will_do = { #EAI
+			factor = 0
 		}
 	}
 
 	CAS2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: CAS2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CAS = yes }
+			}
+		}
 
 		enable_equipments = {
 			CAS_equipment_2
@@ -603,33 +529,19 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
+		ai_will_do = { #EAI
+			factor = 10
 
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 400
-					type = cas
-				}
-				factor = 3
-			}
+			#DATE
+			modifier = { factor = 0 date < 1940.1.1 }
 
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = GER
-					has_war_with = SOV
-				}
-			}
+			#WEIGHT
+			modifier = { factor = 10 num_of_military_factories > 25 }
+			modifier = { factor = 2 date > 1941.1.1 }
 
-			modifier = {
-				factor = 3
-				tag = SOV
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_CAS_tech_focus = yes } }
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter1 is_researching_technology = fighter1 } }
 		}
 	}
 
@@ -647,41 +559,20 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = CAS3
-					is_researching_technology = CAS3
-				}
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					tag = USA
-					tag = JAP
-				}
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+		ai_will_do = { #EAI
+			factor = 0
 		}
 	}
 
 	CAS3 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: CAS3" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CAS = yes }
+			}
+		}
 
 		enable_equipments = {
 			CAS_equipment_3
@@ -709,31 +600,18 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
+		ai_will_do = { #EAI
+			factor = 10
 
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = cas
-				}
-				factor = 3
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					has_war_with = GER
-					has_war_with = SOV
-				}
-			}
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
+			#DATE
+			modifier = { factor = 0 date < 1944.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 10 num_of_military_factories > 25 }
+			modifier = { factor = 2 date > 1945.1.1 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_CAS_tech_focus = yes } }
 		}
 	}
 
@@ -751,30 +629,8 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				OR = {
-					tag = USA
-					tag = JAP
-				}
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+		ai_will_do = { #EAI
+			factor = 0
 		}
 	}
 
@@ -845,7 +701,7 @@ technologies = {
 			factor = 10
 
 			#DATE
-			modifier = { factor = 0 date < 1952.1.1 }
+			modifier = { factor = 0 date < 1950.1.1 }
 
 			#RESTRICTIONS
 			modifier = { factor = 0 NOT = { EAI_FTR_tech_focus = yes } }
@@ -853,6 +709,14 @@ technologies = {
 	}
 
 	naval_bomber1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: naval_bomber1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_NAV = yes }
+			}
+		}
 
 		enable_equipments = {
 			nav_bomber_equipment_1
@@ -880,29 +744,35 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
-			modifier = {
-				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				factor = 5
-				tag = USA
-			}
 
+			#WEIGHT
 			modifier = {
-				factor = 5
-				tag = JAP
+				factor = 10
+				OR = {
+					EAI_CV_tech_focus = yes
+					EAI_NAV_tech_focus = yes
+				}
 			}
+			modifier = { factor = 3 num_of_military_factories > 25 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier EAI_NAV_tech_focus = yes } }
+
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter1 is_researching_technology = fighter1 } }
 		}
 	}
 
 	cv_naval_bomber1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: cv_naval_bomber1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CVNAV = yes }
+			}
+		}
 
 		enable_equipments = {
 			cv_nav_bomber_equipment_1
@@ -916,42 +786,28 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = naval_bomber2
-					is_researching_technology = naval_bomber2
-				}
-			}
-			modifier = {
-				factor = 2.5
-				OR = {
-					tag = USA
-					tag = JAP
-				}
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+			#WEIGHT
+			modifier = { factor = 20 EAI_CV_tech_focus = yes }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier } }
+
+			modifier = { factor = 0 has_tech = naval_bomber2 is_researching_technology = naval_bomber2 }
 		}
 	}
 
 	naval_bomber2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: naval_bomber2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_NAV = yes }
+			}
+		}
 
 		enable_equipments = {
 			nav_bomber_equipment_2
@@ -979,36 +835,38 @@ technologies = {
 			naval_bomber
 		}
 
-		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = naval_bomber
-				}
-				factor = 1.5
-			}
-			modifier = {
-				factor = 5
-				tag = USA
-			}
+		ai_will_do = { #EAI
+			factor = 1
 
+			#DATE
+			modifier = { factor = 0 date < 1940.1.1 }
+
+			#WEIGHT
 			modifier = {
-				factor = 5
-				tag = JAP
+				factor = 10
+				OR = {
+					EAI_CV_tech_focus = yes
+					EAI_NAV_tech_focus = yes
+				}
 			}
+			modifier = { factor = 3 num_of_military_factories > 25 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier EAI_NAV_tech_focus = yes } }
+
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter1 is_researching_technology = fighter1 } }
 		}
 	}
 
 	cv_naval_bomber2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: cv_naval_bomber2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CVNAV = yes }
+			}
+		}
 
 		enable_equipments = {
 			cv_nav_bomber_equipment_2
@@ -1022,43 +880,31 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 5 #if you have carriers, you definitely want these!
+		ai_will_do = { #EAI
+			factor = 1
 
-		modifier = {
-				factor = 0
-				OR = {
-					has_tech = naval_bomber3
-					is_researching_technology = naval_bomber3
-				}
-			}
-			modifier = {
-				factor = 2.5
-				OR = {
-					tag = USA
-					tag = JAP
-				}
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-					has_war_with = ENG
-				}
-			}
-			modifier = {
-				factor = 2
-				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+			#DATE
+			modifier = { factor = 0 date < 1940.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 20 EAI_CV_tech_focus = yes }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier } }
+
+			modifier = { factor = 0 has_tech = naval_bomber3 is_researching_technology = naval_bomber3 }
 		}
 	}
 
 	naval_bomber3 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: naval_bomber3" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_NAV = yes }
+			}
+		}
 
 		enable_equipments = {
 			nav_bomber_equipment_3
@@ -1086,36 +932,38 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = naval_bomber
-				}
-				factor = 1.5
-			}
-			modifier = {
-				factor = 5
-				tag = USA
-			}
+		ai_will_do = { #EAI
+			factor = 1
 
+			#DATE
+			modifier = { factor = 0 date < 1944.1.1 }
+
+			#WEIGHT
 			modifier = {
-				factor = 5
-				tag = JAP
+				factor = 10
+				OR = {
+					EAI_CV_tech_focus = yes
+					EAI_NAV_tech_focus = yes
+				}
 			}
+			modifier = { factor = 3 num_of_military_factories > 25 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier EAI_NAV_tech_focus = yes } }
+
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter2 is_researching_technology = fighter2 } }
 		}
 	}
 
 	cv_naval_bomber3 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: cv_naval_bomber3" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_CVNAV = yes }
+			}
+		}
 
 		enable_equipments = {
 			cv_nav_bomber_equipment_3
@@ -1129,30 +977,17 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
-			modifier = {
-				factor = 2.5
-				OR = {
-					tag = USA
-					tag = JAP
-				}
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-				}
-			}
-			modifier = {
-				factor = 2
-				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
+
+			#DATE
+			modifier = { factor = 0 date < 1944.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 20 EAI_CV_tech_focus = yes }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { has_tech = basic_carrier has_tech = basic_ship_hull_carrier } }
 		}
 	}
 
@@ -1189,12 +1024,26 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
+
+			#WEIGHT
+			modifier = { factor = 20 num_of_military_factories > 25 date > 1937.1.1 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_HFTR_tech_focus = yes EAI_TAC_tech_focus = yes EAI_STR_tech_focus = yes } date < 1944.1.1 }
 		}
 	}
 
 	heavy_fighter1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: heavy_fighter1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_HFTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			heavy_fighter_equipment_1
@@ -1218,16 +1067,27 @@ technologies = {
 			cat_heavy_fighter
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
-			modifier = {
-				factor = 0
-				has_tech = jet_tactical_bomber1
-			}
+
+			#WEIGHT
+			modifier = { factor = 10 date > 1937.1.1 }
+			modifier = { factor = 3 num_of_military_factories > 25 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_HFTR_tech_focus = yes } }
 		}
 	}
 
 	heavy_fighter2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: heavy_fighter2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_HFTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			heavy_fighter_equipment_2
@@ -1251,16 +1111,29 @@ technologies = {
 			cat_heavy_fighter
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_tech = jet_tactical_bomber1
-			}
+		ai_will_do = { #EAI
+			factor = 10
+
+			#DATE
+			modifier = { factor = 0 date < 1940.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 3 num_of_military_factories > 25 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_HFTR_tech_focus = yes } }
 		}
 	}
 
 	heavy_fighter3 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: heavy_fighter3" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_HFTR = yes }
+			}
+		}
 
 		enable_equipments = {
 			heavy_fighter_equipment_3
@@ -1284,12 +1157,17 @@ technologies = {
 			cat_heavy_fighter
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_tech = jet_tactical_bomber1
-			}
+		ai_will_do = { #EAI
+			factor = 10
+
+			#DATE
+			modifier = { factor = 0 date < 1944.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 3 num_of_military_factories > 25 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_HFTR_tech_focus = yes } }
 		}
 	}
 
@@ -1409,12 +1287,8 @@ technologies = {
 			cat_scout_plane
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 0
-			modifier = {
-				factor = 4
-				original_tag = GER
-			}
 		}
 	}
 
@@ -1441,12 +1315,8 @@ technologies = {
 			cat_scout_plane
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 0
-			modifier = {
-				factor = 4
-				original_tag = GER
-			}
 		}
 	}
 
@@ -1469,12 +1339,8 @@ technologies = {
 			cat_scout_plane
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 0
-			modifier = {
-				factor = 4
-				original_tag = GER
-			}
 		}
 	}
 
@@ -1500,24 +1366,8 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				has_war = yes
-				factor = 1.5
-			}
-			modifier = {
-				has_tech = fighter1
-				OR = {
-					has_tech = tactical_bomber1
-					has_tech = CAS1
-				}
-				factor = 3
-			}
+		ai_will_do = { #EAI
+			factor = 0
 		}
 	}
 
@@ -1543,24 +1393,8 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				has_war = yes
-				factor = 1.5
-			}
-			modifier = {
-				has_tech = fighter2
-				OR = {
-					has_tech = tactical_bomber2
-					has_tech = CAS2
-				}
-				factor = 3
-			}
+		ai_will_do = { #EAI
+			factor = 0
 		}
 	}
 
@@ -1582,28 +1416,20 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				has_war = yes
-				factor = 1.5
-			}
-			modifier = {
-				has_tech = fighter3
-				OR = {
-					has_tech = tactical_bomber3
-					has_tech = CAS3
-				}
-				factor = 3
-			}
+		ai_will_do = { #EAI
+			factor = 0
 		}
 	}
 
 	tactical_bomber1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: tactical_bomber1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_TAC = yes }
+			}
+		}
 
 		enable_equipments = {
 			tac_bomber_equipment_1
@@ -1628,36 +1454,28 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1936.1.1"
-			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = tactical_bomber
-				}
-				factor = 2
-			}
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1938.1.1"
-			}
+			#WEIGHT
+			modifier = { factor = 50 EAI_major_country = yes date > 1937.1.1 }
+			modifier = { factor = 2 num_of_military_factories > 25 }
 
-			modifier = {
-				factor = 5
-				is_major = yes
-				date > "1940.1.1"
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_TAC_tech_focus = yes } }
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter1 is_researching_technology = fighter1 } }
 		}
 	}
 
 	tactical_bomber2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: tactical_bomber2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_TAC = yes }
+			}
+		}
 
 		enable_equipments = {
 			tac_bomber_equipment_2
@@ -1681,36 +1499,32 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1940.1.1"
-			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = tactical_bomber
-				}
-				factor = 2
-			}
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1941.1.1"
-			}
+			#DATE
+			modifier = { factor = 0 date < 1940.1.1 }
 
-			modifier = {
-				factor = 5
-				is_major = yes
-				date > "1944.1.1"
-			}
+			#WEIGHT
+			modifier = { factor = 5 EAI_major_country = yes }
+			modifier = { factor = 2 date > 1941.1.1 }
+			modifier = { factor = 10 num_of_military_factories > 25 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_TAC_tech_focus = yes } }
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter1 is_researching_technology = fighter1 } }
 		}
 	}
 
 	tactical_bomber3 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: tactical_bomber3" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_TAC = yes }
+			}
+		}
 
 		enable_equipments = {
 			tac_bomber_equipment_3
@@ -1734,30 +1548,32 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1944.1.1"
-			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = tactical_bomber
-				}
-				factor = 2
-			}
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1945.1.1"
-			}
+			#DATE
+			modifier = { factor = 0 date < 1944.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 5 EAI_major_country = yes }
+			modifier = { factor = 10 num_of_military_factories > 25 }
+			modifier = { factor = 2 date > 1945.1.1 }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_TAC_tech_focus = yes } }
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter2 is_researching_technology = fighter2 } }
 		}
 	}
 
 	jet_tactical_bomber1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: jet_tactical_bomber1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_JTAC = yes }
+			}
+		}
 
 		enable_equipments = {
 			jet_tac_bomber_equipment_1
@@ -1786,16 +1602,29 @@ technologies = {
 			tactical_bomber
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 4
-			}
+
+			#DATE
+			modifier = { factor = 0 date < 1948.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 10 EAI_major_country = yes }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_TAC_tech_focus = yes } }
 		}
 	}
 
 	jet_tactical_bomber2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: jet_tactical_bomber2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_JTAC = yes }
+			}
+		}
 
 		enable_equipments = {
 			jet_tac_bomber_equipment_2
@@ -1814,13 +1643,30 @@ technologies = {
 			tactical_bomber
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1948.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 10 EAI_major_country = yes }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_TAC_tech_focus = yes } }
 		}
 	}
 
 
 	strategic_bomber1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: strategic_bomber1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_STRAT = yes }
+			}
+		}
 
 		enable_equipments = {
 			strat_bomber_equipment_1
@@ -1844,22 +1690,27 @@ technologies = {
 			cat_strategic_bomber
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
 
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
+			#WEIGHT
+			modifier = { factor = 150 date > 1938.1.1 }
 
-			modifier = {
-				factor = 5
-				tag = USA
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_STR_tech_focus = yes } }
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter1 is_researching_technology = fighter1 } }
 		}
 	}
 
 	strategic_bomber2 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: strategic_bomber2" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_STRAT = yes }
+			}
+		}
 
 		enable_equipments = {
 			strat_bomber_equipment_2
@@ -1883,22 +1734,27 @@ technologies = {
 			cat_strategic_bomber
 		}
 
-		ai_will_do = {
-			factor = 1
+		ai_will_do = { #EAI
+			factor = 150
 
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
+			#DATE
+			modifier = { factor = 0 date < 1939.6.1 }
 
-			modifier = {
-				factor = 5
-				tag = USA
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_STR_tech_focus = yes } }
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter1 is_researching_technology = fighter1 } }
 		}
 	}
 
 	strategic_bomber3 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: strategic_bomber3" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_STRAT = yes }
+			}
+		}
 
 		enable_equipments = {
 			strat_bomber_equipment_3
@@ -1922,22 +1778,27 @@ technologies = {
 			cat_strategic_bomber
 		}
 
-		ai_will_do = {
-			factor = 1
+		ai_will_do = { #EAI
+			factor = 150
 
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
+			#DATE
+			modifier = { factor = 0 date < 1943.6.1 }
 
-			modifier = {
-				factor = 5
-				tag = USA
-			}
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_STR_tech_focus = yes } }
+			modifier = { factor = 0 EAI_FTR_tech_focus = yes NOT = { has_tech = fighter2 is_researching_technology = fighter2 } }
 		}
 	}
 
 	jet_strategic_bomber1 = {
+
+		on_research_complete = { #EAI
+			if = { limit = { has_country_flag = EAI_research_logging } log = "[GetDate] | AI TECH | [Root.GetName] | AIR: jet_strategic_bomber1" }
+			if = {
+				limit = { is_ai = yes check_variable = { EAI_air_xp > 130 } }
+				hidden_effect = { EAI_variant_upgrade_JSTRAT = yes }
+			}
+		}
 
 		enable_equipments = {
 			jet_strat_bomber_equipment_1
@@ -1966,15 +1827,17 @@ technologies = {
 			cat_strategic_bomber
 		}
 
-		ai_will_do = {
+		ai_will_do = { #EAI
 			factor = 1
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = strategic_bomber
-				}
-				factor = 4.5
-			}
+
+			#DATE
+			modifier = { factor = 0 date < 1948.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 50 EAI_STR_tech_focus = yes }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_STR_tech_focus = yes } date < 1946.1.1 }
 		}
 	}
 
@@ -2006,8 +1869,17 @@ technologies = {
 			cat_strategic_bomber
 		}
 
-		ai_will_do = {
-			factor = 0
+		ai_will_do = { #EAI
+			factor = 1
+
+			#DATE
+			modifier = { factor = 0 date < 1952.1.1 }
+
+			#WEIGHT
+			modifier = { factor = 50 EAI_STR_tech_focus = yes }
+
+			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { EAI_STR_tech_focus = yes } date < 1950.1.1 }
 		}
 	}
 
