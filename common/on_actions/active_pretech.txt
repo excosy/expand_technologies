@@ -1,0 +1,79 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				set_technology = {
+					transport_plane1 = 1
+					popup = no
+				}
+			}
+
+			# industry
+			every_country = {
+				limit = {
+					OR = {
+						has_tech = concentrated_industry
+						has_tech = dispersed_industry
+					}
+				}
+				set_technology = {
+					concentrated_industry = 1
+					dispersed_industry = 1
+					popup = no
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_tech = concentrated_industry2
+						has_tech = dispersed_industry2
+					}
+				}
+				set_technology = {
+					concentrated_industry2 = 1
+					dispersed_industry2 = 1
+					popup = no
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_tech = concentrated_industry3
+						has_tech = dispersed_industry3
+					}
+				}
+				set_technology = {
+					concentrated_industry3 = 1
+					dispersed_industry3 = 1
+					popup = no
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_tech = concentrated_industry4
+						has_tech = dispersed_industry4
+					}
+				}
+				set_technology = {
+					concentrated_industry4 = 1
+					dispersed_industry4 = 1
+					popup = no
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_tech = concentrated_industry5
+						has_tech = dispersed_industry5
+					}
+				}
+				set_technology = {
+					concentrated_industry5 = 1
+					dispersed_industry5 = 1
+					popup = no
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,3 @@
+AT_resources = {
+	icon = generic_economy
+}

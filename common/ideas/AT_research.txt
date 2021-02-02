@@ -1,0 +1,136 @@
+ideas = {
+	country = {
+		AT_operative_slots_1 = {
+
+			picture = AT_operative_slots
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 1
+			}
+		}
+
+		AT_operative_slots_2 = {
+
+			picture = AT_operative_slots
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 2
+			}
+		}
+
+		AT_operative_slots_3 = {
+
+			picture = AT_operative_slots
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 3
+			}
+		}
+
+		AT_operative_slots_4 = {
+
+			picture = AT_operative_slots
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 4
+			}
+		}
+
+		AT_operative_slots_5 = {
+
+			picture = AT_operative_slots
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 5
+			}
+		}
+
+		AT_operative_slots_6 = {
+
+			picture = AT_operative_slots
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 6
+			}
+		}
+
+		AT_operative_slots_7 = {
+
+			picture = AT_operative_slots
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 7
+			}
+		}
+	}
+}

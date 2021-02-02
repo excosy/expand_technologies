@@ -1,0 +1,229 @@
+AT_resources = {
+
+	AT_resources_manpower = {
+
+		icon = eng_blackshirt_march
+
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			surrender_progress > 0
+			has_manpower < 150000
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_manpower = 150000
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	AT_resources_oil = {
+
+		icon = oil
+
+		cost = 50
+		days_remove = 120
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+		}
+	}
+
+	AT_resources_aluminium = {
+
+		icon = aluminium
+
+		cost = 50
+		days_remove = 120
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+			}
+		}
+	}
+
+	AT_resources_rubber = {
+
+		icon = rubber
+
+		cost = 50
+		days_remove = 120
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+		}
+	}
+
+	AT_resources_tungsten = {
+
+		icon = tungsten
+
+		cost = 50
+		days_remove = 120
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				add_resource = {
+					type = tungsten
+					amount = 10
+				}
+			}
+		}
+	}
+
+	AT_resources_steel = {
+
+		icon = steel
+
+		cost = 50
+		days_remove = 120
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+	}
+
+	AT_resources_chromium = {
+
+		icon = chromium
+
+		cost = 50
+		days_remove = 120
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				add_resource = {
+					type = chromium
+					amount = 10
+				}
+			}
+		}
+	}
+
+	AT_factory_additional_civ = {
+
+		icon = GFX_civ_factory_output
+
+		cost = 150
+
+		complete_effect = {
+			add_offsite_building = {
+				type = industrial_complex level = 1
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_political_power > 300
+			}
+		}
+	}
+
+	AT_factory_speedup_civ = {
+
+		icon = GFX_civ_factory
+
+		cost = 150
+		days_remove = 15
+
+		modifier = {
+			production_speed_buildings_factor = 1
+			industry_repair_factor = 1
+		}
+	}
+
+	AT_factory_speedup_mil = {
+
+		icon = GFX_mil_factory
+
+		cost = 150
+		days_remove = 15
+
+		modifier = {
+			industrial_capacity_factory = 1
+			industrial_capacity_dockyard = 1
+		}
+	}
+}
