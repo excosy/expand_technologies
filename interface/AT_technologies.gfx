@@ -1406,6 +1406,205 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/torpedo_launcher_6.dds"
 	}
 
+	### naval components
+
+	spriteType = {
+		name = "GFX_SMI_light_ship_nuclear_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_light_ship_nuclear_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_light_ship_nuclear_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_light_ship_nuclear_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_light_ship_nuclear_engine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_light_ship_nuclear_engine_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_nuclear_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_nuclear_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_nuclear_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_nuclear_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_nuclear_engine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_nuclear_engine_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_nuclear_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_nuclear_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_nuclear_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_nuclear_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_nuclear_engine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_nuclear_engine_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_heavy_ship_nuclear_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_heavy_ship_nuclear_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_heavy_ship_nuclear_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_heavy_ship_nuclear_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_heavy_ship_nuclear_engine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_heavy_ship_nuclear_engine_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_sub_ship_nuclear_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_sub_ship_nuclear_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_sub_ship_nuclear_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_sub_ship_nuclear_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_sub_ship_nuclear_engine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_sub_ship_nuclear_engine_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_n_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_radar_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/radar_icn_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_radar_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/radar_icn_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/fire_control_system_icn_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/fire_control_system_icn_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_7"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/fire_control_system_icn_7.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_8"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/fire_control_system_icn_8.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon_7"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon_7.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_cannon_8"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_air_cannon_8.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/anti_air_icn_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/anti_air_icn_6.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_7"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/anti_air_icn_7.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_8"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/anti_air_icn_8.dds"
+	}
+
 	##### naval combat #####
 
 	spriteType = { name = "GFX_unit_battle_cruiser_5_icon_medium"	texturefile = "gfx/interface/navalcombat/ships/battlecruiser_V.dds"		noOfFrames = 2 }

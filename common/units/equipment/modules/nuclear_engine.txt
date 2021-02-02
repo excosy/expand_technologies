@@ -1,0 +1,1037 @@
+equipment_modules = {
+
+ ##  #  # ### ###      ##  ### ###
+#  # ## #  #   #      #  #  #  #  #
+#### # ##  #   #      ####  #  ###
+#  # #  #  #   #      #  #  #  #  #
+#  # #  #  #  ###     #  # ### #  #
+
+	ship_anti_air_1 = {
+		category = ship_anti_air
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 90
+			anti_air_attack = 1
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.005
+		}
+	}
+
+	ship_anti_air_2 = {
+		category = ship_anti_air
+		parent = ship_anti_air_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 120
+			anti_air_attack = 2
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.01
+		}
+	}
+
+	ship_anti_air_3 = {
+		category = ship_anti_air
+		parent = ship_anti_air_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 150
+			anti_air_attack = 3
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.015
+		}
+	}
+
+	ship_anti_air_4 = {
+		category = ship_anti_air
+		parent = ship_anti_air_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 180
+			anti_air_attack = 4
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.02
+		}
+	}
+
+	ship_anti_air_5 = {
+		category = ship_anti_air
+		parent = ship_anti_air_4
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 210
+			anti_air_attack = 5
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.025
+		}
+	}
+
+	ship_anti_air_6 = {
+		category = ship_anti_air
+		parent = ship_anti_air_5
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 240
+			anti_air_attack = 6
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.03
+		}
+	}
+
+	ship_anti_air_7 = {
+		category = ship_anti_air
+		parent = ship_anti_air_6
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 270
+			anti_air_attack = 7
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.035
+		}
+	}
+
+	ship_anti_air_8 = {
+		category = ship_anti_air
+		parent = ship_anti_air_7
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 300
+			anti_air_attack = 8
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.04
+		}
+	}
+
+	ship_anti_air_cannon_1 = {
+		category = ship_anti_air_cannon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 90
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.005
+			anti_air_attack = 0.05
+		}
+	}
+
+	ship_anti_air_cannon_2 = {
+		category = ship_anti_air_cannon
+		parent = ship_anti_air_cannon_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 120
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.01
+			anti_air_attack = 0.1
+		}
+	}
+
+	ship_anti_air_cannon_3 = {
+		category = ship_anti_air_cannon
+		parent = ship_anti_air_cannon_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 150
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.015
+			anti_air_attack = 0.15
+		}
+	}
+
+	ship_anti_air_cannon_4 = {
+		category = ship_anti_air_cannon
+		parent = ship_anti_air_cannon_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 180
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.02
+			anti_air_attack = 0.2
+		}
+	}
+
+	ship_anti_air_cannon_5 = {
+		category = ship_anti_air_cannon
+		parent = ship_anti_air_cannon_4
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 210
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.025
+			anti_air_attack = 0.25
+		}
+	}
+
+	ship_anti_air_cannon_6 = {
+		category = ship_anti_air_cannon
+		parent = ship_anti_air_cannon_5
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 240
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.03
+			anti_air_attack = 0.3
+		}
+	}
+
+	ship_anti_air_cannon_7 = {
+		category = ship_anti_air_cannon
+		parent = ship_anti_air_cannon_6
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 270
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.035
+			anti_air_attack = 0.35
+		}
+	}
+
+	ship_anti_air_cannon_8 = {
+		category = ship_anti_air_cannon
+		parent = ship_anti_air_cannon_7
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+
+		add_stats = {
+			build_cost_ic = 300
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+			build_cost_ic = 0.04
+			anti_air_attack = 0.4
+		}
+	}
+
+### ### ###  ###      ##   ##  #  # ### ###   ##  #        ## #   #  ## ### ### #   #
+#    #  #  # #       #  # #  # ## #  #  #  # #  # #       #    # #  #    #  #   ## ##
+##   #  ###  ##      #    #  # # ##  #  ###  #  # #        #    #    #   #  ##  # # #
+#    #  #  # #       #  # #  # #  #  #  #  # #  # #         #   #     #  #  #   #   #
+#   ### #  # ###      ##   ##  #  #  #  #  #  ##  ###     ##    #   ##   #  ### #   #
+
+	ship_fire_control_system_0 = {
+		category = ship_fire_control_system
+		gfx = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 60
+		}
+
+		multiply_stats = {
+			reliability = 0.1
+		}
+	}
+
+	ship_fire_control_system_1 = {
+		category = ship_fire_control_system
+
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 90
+		}
+
+		multiply_stats = {
+			lg_attack = 0.04
+			hg_attack = 0.04
+			anti_air_attack = 0.04
+			reliability = -0.04
+			build_cost_ic = 0.02
+		}
+	}
+
+	ship_fire_control_system_2 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 120
+		}
+
+		multiply_stats = {
+			lg_attack = 0.08
+			hg_attack = 0.08
+			anti_air_attack = 0.08
+			reliability = -0.08
+			build_cost_ic = 0.04
+		}
+	}
+
+	ship_fire_control_system_3 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 180
+		}
+
+		multiply_stats = {
+			lg_attack = 0.12
+			hg_attack = 0.12
+			anti_air_attack = 0.12
+			reliability = -0.12
+			build_cost_ic = 0.06
+		}
+	}
+
+	ship_fire_control_system_4 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 210
+		}
+
+		multiply_stats = {
+			lg_attack = 0.16
+			hg_attack = 0.16
+			anti_air_attack = 0.16
+			reliability = -0.16
+			build_cost_ic = 0.08
+		}
+	}
+
+	ship_fire_control_system_5 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 240
+		}
+
+		multiply_stats = {
+			lg_attack = 0.20
+			hg_attack = 0.20
+			anti_air_attack = 0.20
+			reliability = -0.20
+			build_cost_ic = 0.10
+		}
+	}
+
+	ship_fire_control_system_6 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 270
+		}
+
+		multiply_stats = {
+			lg_attack = 0.24
+			hg_attack = 0.24
+			anti_air_attack = 0.24
+			reliability = -0.24
+			build_cost_ic = 0.12
+		}
+	}
+
+	ship_fire_control_system_7 = {
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 300
+		}
+
+		multiply_stats = {
+			lg_attack = 0.28
+			hg_attack = 0.28
+			anti_air_attack = 0.28
+			reliability = -0.28
+			build_cost_ic = 0.14
+		}
+	}
+
+###   ##  ###   ##  ###
+#  # #  # #  # #  # #  #
+###  #### #  # #### ###
+#  # #  # #  # #  # #  #
+#  # #  # ###  #  # #  #
+
+	ship_radar_1 = {
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 80
+			surface_detection = 5
+			sub_detection = 2
+		}
+	}
+
+	ship_radar_2 = {
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 110
+			surface_detection = 8
+			sub_detection = 4
+		}
+	}
+
+	ship_radar_3 = {
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			surface_detection = 12
+			sub_detection = 6
+			build_cost_ic = 140
+		}
+	}
+
+	ship_radar_4 = {
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 170
+			surface_detection = 16
+			sub_detection = 8
+		}
+	}
+
+	ship_radar_5 = {
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 200
+			surface_detection = 20
+			sub_detection = 10
+		}
+	}
+
+	ship_radar_6 = {
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			surface_detection = 24
+			sub_detection = 12
+			build_cost_ic = 230
+		}
+	}
+
+
+### #  #  ##  ### #  # ###
+#   ## # #     #  ## # #
+##  # ## # ##  #  # ## ##
+#   #  # #  #  #  #  # #
+### #  #  ##  ### #  # ###
+
+	light_ship_nuclear_engine_1 = {
+		category = light_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 90
+		}
+
+		multiply_stats = {
+			naval_speed = 0.15
+			reliability = -0.2
+		}
+	}
+
+	light_ship_nuclear_engine_2 = {
+		category = light_ship_engine
+		parent = light_ship_nuclear_engine_1
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1120
+		}
+
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+		}
+	}
+
+	light_ship_nuclear_engine_3 = {
+		category = light_ship_engine
+		parent = light_ship_nuclear_engine_2
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1150
+		}
+
+		multiply_stats = {
+			naval_speed = 0.25
+			reliability = -0.2
+		}
+	}
+
+	light_ship_nuclear_engine_4 = {
+		category = light_ship_engine
+		parent = light_ship_nuclear_engine_3
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1170
+		}
+
+		multiply_stats = {
+			naval_speed = 0.3
+			reliability = -0.2
+		}
+	}
+
+	light_ship_nuclear_engine_5 = {
+		category = light_ship_engine
+		parent = light_ship_nuclear_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1200
+		}
+
+		multiply_stats = {
+			naval_speed = 0.35
+			reliability = -0.2
+		}
+	}
+
+	light_ship_nuclear_engine_6 = {
+		category = light_ship_engine
+		parent = light_ship_nuclear_engine_5
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1230
+		}
+
+		multiply_stats = {
+			naval_speed = 0.4
+			reliability = -0.2
+		}
+	}
+
+	sub_ship_nuclear_engine_1 = {
+		category = sub_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 90
+		}
+
+		multiply_stats = {
+			naval_speed = 0.05
+			reliability = -0.2
+
+		}
+	}
+
+	sub_ship_nuclear_engine_2 = {
+		category = sub_ship_engine
+		parent = sub_ship_nuclear_engine_1
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1120
+		}
+
+		multiply_stats = {
+			naval_speed = 0.06
+			reliability = -0.2
+		}
+	}
+
+	sub_ship_nuclear_engine_3 = {
+		category = sub_ship_engine
+		parent = sub_ship_nuclear_engine_2
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1150
+		}
+
+		multiply_stats = {
+			naval_speed = 0.07
+			reliability = -0.2
+		}
+	}
+
+	sub_ship_nuclear_engine_4 = {
+		category = sub_ship_engine
+		parent = sub_ship_nuclear_engine_3
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1170
+		}
+
+		multiply_stats = {
+			naval_speed = 0.08
+			reliability = -0.2
+		}
+	}
+
+	sub_ship_nuclear_engine_5 = {
+		category = sub_ship_engine
+		parent = sub_ship_nuclear_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1200
+		}
+
+		multiply_stats = {
+			naval_speed = 0.09
+			reliability = -0.2
+		}
+	}
+
+	sub_ship_nuclear_engine_6 = {
+		category = sub_ship_engine
+		parent = sub_ship_nuclear_engine_5
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1230
+		}
+
+		multiply_stats = {
+			naval_speed = 0.1
+			reliability = -0.2
+		}
+	}
+
+	cruiser_ship_nuclear_engine_1 = {
+		category = cruiser_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1400
+		}
+
+		multiply_stats = {
+			naval_speed = 0.15
+			reliability = -0.2
+		}
+	}
+
+	cruiser_ship_nuclear_engine_2 = {
+		category = cruiser_ship_engine
+		parent = cruiser_ship_nuclear_engine_1
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 6
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1480
+		}
+
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+		}
+	}
+
+	cruiser_ship_nuclear_engine_3 = {
+		category = cruiser_ship_engine
+		parent = cruiser_ship_nuclear_engine_2
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 7
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1550
+		}
+
+		multiply_stats = {
+			naval_speed = 0.25
+			reliability = -0.2
+		}
+	}
+
+	cruiser_ship_nuclear_engine_4 = {
+		category = cruiser_ship_engine
+		parent = cruiser_ship_nuclear_engine_3
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 8
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1670
+		}
+
+		multiply_stats = {
+			naval_speed = 0.3
+			reliability = -0.2
+		}
+	}
+
+	cruiser_ship_nuclear_engine_5 = {
+		category = cruiser_ship_engine
+		parent = cruiser_ship_nuclear_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 9
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1790
+		}
+
+		multiply_stats = {
+			naval_speed = 0.35
+			reliability = -0.2
+		}
+	}
+
+	cruiser_ship_nuclear_engine_6 = {
+		category = cruiser_ship_engine
+		parent = cruiser_ship_nuclear_engine_5
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 10
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1910
+		}
+
+		multiply_stats = {
+			naval_speed = 0.4
+			reliability = -0.2
+		}
+	}
+
+	heavy_ship_nuclear_engine_1 = {
+		category = heavy_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 7
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 2800
+		}
+
+		multiply_stats = {
+			naval_speed = 0.15
+			reliability = -0.2
+		}
+	}
+
+	heavy_ship_nuclear_engine_2 = {
+		category = heavy_ship_engine
+		parent = heavy_ship_nuclear_engine_1
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 10
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 3200
+		}
+
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+		}
+	}
+
+	heavy_ship_nuclear_engine_3 = {
+		category = heavy_ship_engine
+		parent = heavy_ship_nuclear_engine_2
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 11
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 3600
+		}
+
+		multiply_stats = {
+			naval_speed = 0.25
+			reliability = -0.2
+
+		}
+	}
+
+	heavy_ship_nuclear_engine_4 = {
+		category = heavy_ship_engine
+		parent = heavy_ship_nuclear_engine_3
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 12
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 4000
+		}
+
+		multiply_stats = {
+			naval_speed = 0.3
+			reliability = -0.2
+
+		}
+	}
+
+	heavy_ship_nuclear_engine_5 = {
+		category = heavy_ship_engine
+		parent = heavy_ship_nuclear_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 13
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 4400
+		}
+
+		multiply_stats = {
+			naval_speed = 0.35
+			reliability = -0.2
+
+		}
+	}
+
+	heavy_ship_nuclear_engine_6 = {
+		category = heavy_ship_engine
+		parent = heavy_ship_nuclear_engine_5
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 14
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 4800
+		}
+
+		multiply_stats = {
+			naval_speed = 0.4
+			reliability = -0.2
+
+		}
+	}
+
+	carrier_ship_nuclear_engine_1 = {
+		category = carrier_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1400
+		}
+
+		multiply_stats = {
+			naval_speed = 0.15
+			reliability = -0.2
+		}
+	}
+
+	carrier_ship_nuclear_engine_2 = {
+		category = carrier_ship_engine
+		parent = carrier_ship_nuclear_engine_1
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1480
+		}
+
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+		}
+	}
+
+	carrier_ship_nuclear_engine_3 = {
+		category = carrier_ship_engine
+		parent = carrier_ship_nuclear_engine_2
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1550
+		}
+
+		multiply_stats = {
+			naval_speed = 0.25
+			reliability = -0.2
+		}
+	}
+
+	carrier_ship_nuclear_engine_4 = {
+		category = carrier_ship_engine
+		parent = carrier_ship_nuclear_engine_3
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1670
+		}
+
+		multiply_stats = {
+			naval_speed = 0.3
+			reliability = -0.2
+		}
+	}
+
+	carrier_ship_nuclear_engine_5 = {
+		category = carrier_ship_engine
+		parent = carrier_ship_nuclear_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1770
+		}
+
+		multiply_stats = {
+			naval_speed = 0.35
+			reliability = -0.2
+		}
+	}
+
+	carrier_ship_nuclear_engine_6 = {
+		category = carrier_ship_engine
+		parent = carrier_ship_nuclear_engine_5
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 10000
+			fuel_consumption = 0
+			build_cost_ic = 1880
+		}
+
+		multiply_stats = {
+			naval_speed = 0.4
+			reliability = -0.2
+		}
+	}
+}
