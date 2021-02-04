@@ -1413,7 +1413,7 @@ technologies = {
 	tech_signal_company2 = {
 
 		signal_company = {
-			default_morale = 0.3
+			default_morale = 0.2
 			initiative = 0.12
 		}
 
@@ -1451,7 +1451,7 @@ technologies = {
 	tech_signal_company3 = {
 
 		signal_company = {
-			default_morale = 0.3
+			default_morale = 0.2
 			initiative = 0.12
 		}
 		path = {
@@ -1488,7 +1488,7 @@ technologies = {
 	tech_signal_company4 = {
 
 		signal_company = {
-			default_morale = 0.3
+			default_morale = 0.2
 			initiative = 0.12
 		}
 		path = {
@@ -1525,7 +1525,7 @@ technologies = {
 	tech_signal_company5 = {
 
 		signal_company = {
-			default_morale = 0.3
+			default_morale = 0.2
 			initiative = 0.12
 		}
 		path = {
@@ -1562,7 +1562,7 @@ technologies = {
 	tech_signal_company6 = {
 
 		signal_company = {
-			default_morale = 0.3
+			default_morale = 0.2
 			initiative = 0.12
 		}
 
