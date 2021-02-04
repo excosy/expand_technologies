@@ -341,42 +341,35 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "motorised_infantry_tree"
-				position = { x = 140 y = 620 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-
-			gridboxtype = {
-				name = "motorised_infantry1_tree"
-				position = { x = 140 y = 620 }
+				position = { x = 140 y = 605 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "marines_tree"
-				position = { x = 140 y = 875 }
+				position = { x = 140 y = 815 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_mountaineers_tree"
-				position = { x = 140 y = 875 }
+				position = { x = 140 y = 815 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "paratroopers_tree"
-				position = { x = 140 y = 875 }
+				position = { x = 140 y = 815 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_special_forces_tree"
-				position = { x = 140 y = 860 }
+				position = { x = 140 y = 810 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
