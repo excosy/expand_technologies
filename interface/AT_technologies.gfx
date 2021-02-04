@@ -95,6 +95,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/infantry3.dds"
 	}
 	SpriteType = {
+		name = "GFX_modern_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons5.dds"
+	}
+	SpriteType = {
 		name = "GFX_infantry_at3_medium"
 		texturefile = "gfx/interface/technologies/infantry_at3.dds"
 	}
@@ -163,22 +167,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/mechanized_equipment_6.dds"
 	}
 	SpriteType = {
-		name = "GFX_amphibious_mechanized_infantry_3_medium"
-		texturefile = "gfx/interface/technologies/generic_amphibious_mech_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_amphibious_mechanized_infantry_4_medium"
-		texturefile = "gfx/interface/technologies/generic_amphibious_mech_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_amphibious_mechanized_infantry_5_medium"
-		texturefile = "gfx/interface/technologies/generic_amphibious_mech_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_amphibious_mechanized_infantry_6_medium"
-		texturefile = "gfx/interface/technologies/generic_amphibious_mech_2.dds"
-	}
-	SpriteType = {
 		name = "GFX_tech_mountaineers4_medium"
 		texturefile = "gfx/interface/technologies/mountain4.dds"
 	}
@@ -236,7 +224,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_early_special_forces_medium"
-		texturefile = "gfx/interface/technologies/tech_signal_company.dds"
+		texturefile = "gfx/interface/technologies/tech_logistics_company.dds"
 	}
 	SpriteType = {
 		name = "GFX_defensive_training_medium"
@@ -244,7 +232,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_offensive_training_medium"
-		texturefile = "gfx/interface/technologies/tech_signal_company2.dds"
+		texturefile = "gfx/interface/technologies/tech_logistics_company2.dds"
 	}
 	SpriteType = {
 		name = "GFX_basic_special_forces2_medium"
@@ -252,7 +240,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_early_special_forces2_medium"
-		texturefile = "gfx/interface/technologies/tech_signal_company.dds"
+		texturefile = "gfx/interface/technologies/tech_logistics_company.dds"
 	}
 	SpriteType = {
 		name = "GFX_defensive_training2_medium"
@@ -260,7 +248,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_offensive_training2_medium"
-		texturefile = "gfx/interface/technologies/tech_signal_company2.dds"
+		texturefile = "gfx/interface/technologies/tech_logistics_company2.dds"
 	}
 	SpriteType = {
 		name = "GFX_advanced_special_forces2_medium"
@@ -285,6 +273,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_bicycle_infantry_medium"
 		texturefile = "gfx/interface/technologies/bicycle_infantry.dds"
+	}
+	SpriteType = {
+		name = "GFX_scavenger_medium"
+		texturefile = "gfx/interface/technologies/rocket_artillery2.dds"
 	}
 
 	##### artillery #####

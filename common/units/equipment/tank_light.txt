@@ -16,7 +16,7 @@ equipments = {
 
 		upgrades = {
 			tank_reliability_upgrade
-			tank_engine_upgrade
+			ac_engine_upgrade
 			tank_armor_upgrade
 			tank_gun_upgrade
 		}
@@ -127,7 +127,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 11
+		maximum_speed = 12
 
 		#Defensive Abilities
 		defense = 6
@@ -156,7 +156,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 12
+		maximum_speed = 14
 
 		#Defensive Abilities
 		defense = 7
@@ -184,7 +184,7 @@ equipments = {
 		visual_level = 2
 
 		#Misc Abilities
-		maximum_speed = 13
+		maximum_speed = 16
 
 		#Defensive Abilities
 		defense = 8
@@ -212,7 +212,7 @@ equipments = {
 		visual_level = 5
 
 		#Misc Abilities
-		maximum_speed = 14
+		maximum_speed = 18
 
 		#Defensive Abilities
 		defense = 9
@@ -240,7 +240,7 @@ equipments = {
 		visual_level = 6
 
 		#Misc Abilities
-		maximum_speed = 15
+		maximum_speed = 20
 
 		#Defensive Abilities
 		defense = 10
@@ -268,7 +268,7 @@ equipments = {
 		visual_level = 7
 
 		#Misc Abilities
-		maximum_speed = 16
+		maximum_speed = 22
 
 		#Defensive Abilities
 		defense = 11
@@ -296,7 +296,7 @@ equipments = {
 		visual_level = 8
 
 		#Misc Abilities
-		maximum_speed = 17
+		maximum_speed = 24
 
 		#Defensive Abilities
 		defense = 12
@@ -333,7 +333,7 @@ equipments = {
 
 		upgrades = {
 			tank_reliability_upgrade
-			tank_engine_upgrade
+			ac_engine_upgrade
 			tank_armor_upgrade
 			tank_art_upgrade
 		}
@@ -418,7 +418,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 11
+		maximum_speed = 12
 
 		#Defensive Abilities
 		defense = 7
@@ -449,7 +449,7 @@ equipments = {
 
 
 		#Misc Abilities
-		maximum_speed = 12
+		maximum_speed = 14
 
 		#Defensive Abilities
 		defense = 8
@@ -480,7 +480,7 @@ equipments = {
 
 
 		#Misc Abilities
-		maximum_speed = 13
+		maximum_speed = 16
 
 		#Defensive Abilities
 		defense = 9
@@ -511,7 +511,7 @@ equipments = {
 
 
 		#Misc Abilities
-		maximum_speed = 14
+		maximum_speed = 18
 
 		#Defensive Abilities
 		defense = 10
@@ -542,7 +542,7 @@ equipments = {
 
 
 		#Misc Abilities
-		maximum_speed = 15
+		maximum_speed = 20
 
 		#Defensive Abilities
 		defense = 11
@@ -573,7 +573,7 @@ equipments = {
 
 
 		#Misc Abilities
-		maximum_speed = 16
+		maximum_speed = 22
 
 		#Defensive Abilities
 		defense = 12
@@ -604,7 +604,7 @@ equipments = {
 
 
 		#Misc Abilities
-		maximum_speed = 17
+		maximum_speed = 24
 
 		#Defensive Abilities
 		defense = 13
@@ -639,7 +639,7 @@ equipments = {
 
 		upgrades = {
 			tank_reliability_upgrade
-			tank_engine_upgrade
+			ac_engine_upgrade
 			tank_armor_upgrade
 			tank_at_upgrade
 		}
@@ -726,7 +726,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 11
+		maximum_speed = 12
 
 		#Defensive Abilities
 		defense = 7
@@ -755,7 +755,7 @@ equipments = {
 			light_tank_equipment_3
 			light_tank_equipment_4
 		}
-		maximum_speed = 12
+		maximum_speed = 14
 		defense = 8
 		breakthrough = 2.1
 		armor_value = 40
@@ -780,7 +780,7 @@ equipments = {
 			light_tank_equipment_4
 			light_tank_equipment_5
 		}
-		maximum_speed = 13
+		maximum_speed = 16
 		defense = 9
 		breakthrough = 2.4
 		armor_value = 50
@@ -805,7 +805,7 @@ equipments = {
 			light_tank_equipment_5
 			light_tank_equipment_6
 		}
-		maximum_speed = 14
+		maximum_speed = 18
 		defense = 10
 		breakthrough = 2.7
 		armor_value = 60
@@ -830,7 +830,7 @@ equipments = {
 			light_tank_equipment_6
 			light_tank_equipment_7
 		}
-		maximum_speed = 15
+		maximum_speed = 20
 		defense = 11
 		breakthrough = 3
 		armor_value = 70
@@ -855,7 +855,7 @@ equipments = {
 			light_tank_equipment_7
 			light_tank_equipment_8
 		}
-		maximum_speed = 16
+		maximum_speed = 22
 		defense = 12
 		breakthrough = 3.3
 		armor_value = 80
@@ -880,7 +880,7 @@ equipments = {
 			light_tank_equipment_8
 			light_tank_equipment_9
 		}
-		maximum_speed = 17
+		maximum_speed = 24
 		defense = 11
 		breakthrough = 3.6
 		armor_value = 90
@@ -912,7 +912,7 @@ equipments = {
 
 		upgrades = {
 			tank_reliability_upgrade
-			tank_engine_upgrade
+			ac_engine_upgrade
 			tank_armor_upgrade
 			tank_aa_upgrade
 		}
@@ -999,7 +999,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 11
+		maximum_speed = 12
 
 		#Defensive Abilities
 		defense = 3.5
@@ -1029,7 +1029,7 @@ equipments = {
 			light_tank_equipment_3
 			light_tank_equipment_4
 		}
-		maximum_speed = 12
+		maximum_speed = 14
 		defense = 4
 		breakthrough = 4
 		armor_value = 32
@@ -1054,7 +1054,7 @@ equipments = {
 			light_tank_equipment_4
 			light_tank_equipment_5
 		}
-		maximum_speed = 13
+		maximum_speed = 16
 		defense = 4.5
 		breakthrough = 4.5
 		armor_value = 40
@@ -1079,7 +1079,7 @@ equipments = {
 			light_tank_equipment_5
 			light_tank_equipment_6
 		}
-		maximum_speed = 14
+		maximum_speed = 18
 		defense = 5
 		breakthrough = 5
 		armor_value = 48
@@ -1104,7 +1104,7 @@ equipments = {
 			light_tank_equipment_6
 			light_tank_equipment_7
 		}
-		maximum_speed = 15
+		maximum_speed = 20
 		defense = 5.5
 		breakthrough = 5.5
 		armor_value = 56
@@ -1129,7 +1129,7 @@ equipments = {
 			light_tank_equipment_7
 			light_tank_equipment_8
 		}
-		maximum_speed = 16
+		maximum_speed = 22
 		defense = 6
 		breakthrough = 6
 		armor_value = 64
@@ -1154,7 +1154,7 @@ equipments = {
 			light_tank_equipment_8
 			light_tank_equipment_9
 		}
-		maximum_speed = 17
+		maximum_speed = 24
 		defense = 6.5
 		breakthrough = 6.5
 		armor_value = 72

@@ -19,7 +19,7 @@ HOI4 technologies mod
 
 ### important changes
 
-* There are different strengthening aspects with different special forces troops;
+* There are different fortified aspects with different special forces troops;
 * Decrease production cost ic of field hospital, and increase recovery rate of signal company;
 * Remove the fuel consumption of super heavy tanks, and increase production cost ic of SPAA;
 * Remove soft attack of rocket artillery, increase its breakthrough; rocket artillery costs less supply than tanks;
