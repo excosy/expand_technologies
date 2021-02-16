@@ -1397,14 +1397,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 7
 			build_cost_ic = 90
 		}
 
 		multiply_stats = {
-			naval_speed = 0.15
-			reliability = -0.2
+			naval_speed = 0.05
+			#reliability = -0.2
 		}
 	}
 
@@ -1414,14 +1414,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 8
 			build_cost_ic = 120
 		}
 
 		multiply_stats = {
-			naval_speed = 0.2
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -1431,14 +1431,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 9
 			build_cost_ic = 150
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 		}
 	}
 
@@ -1448,14 +1448,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 10
 			build_cost_ic = 170
 		}
 
 		multiply_stats = {
-			naval_speed = 0.3
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 		}
 	}
 
@@ -1465,14 +1465,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 11
 			build_cost_ic = 200
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 		}
 	}
 
@@ -1482,14 +1482,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 12
 			build_cost_ic = 230
 		}
 
 		multiply_stats = {
-			naval_speed = 0.4
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 		}
 	}
 
@@ -1498,14 +1498,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 7
 			build_cost_ic = 90
 		}
 
 		multiply_stats = {
 			naval_speed = 0.05
-			reliability = -0.2
+			#reliability = -0.2
 
 		}
 	}
@@ -1516,14 +1516,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 8
 			build_cost_ic = 120
 		}
 
 		multiply_stats = {
-			naval_speed = 0.06
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -1533,14 +1533,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 9
 			build_cost_ic = 150
 		}
 
 		multiply_stats = {
-			naval_speed = 0.07
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 		}
 	}
 
@@ -1550,14 +1550,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 10
 			build_cost_ic = 170
 		}
 
 		multiply_stats = {
-			naval_speed = 0.08
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 		}
 	}
 
@@ -1567,14 +1567,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 11
 			build_cost_ic = 200
 		}
 
 		multiply_stats = {
-			naval_speed = 0.09
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 		}
 	}
 
@@ -1584,14 +1584,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 12
 			build_cost_ic = 230
 		}
 
 		multiply_stats = {
-			naval_speed = 0.1
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 		}
 	}
 
@@ -1600,14 +1600,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 12
 			build_cost_ic = 400
 		}
 
 		multiply_stats = {
-			naval_speed = 0.15
-			reliability = -0.2
+			naval_speed = 0.05
+			#reliability = -0.2
 		}
 	}
 
@@ -1617,14 +1617,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 6
+			#naval_speed = 6
 			fuel_consumption = 14
 			build_cost_ic = 480
 		}
 
 		multiply_stats = {
-			naval_speed = 0.2
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -1634,14 +1634,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 7
+			#naval_speed = 7
 			fuel_consumption = 16
 			build_cost_ic = 560
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 		}
 	}
 
@@ -1651,14 +1651,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 8
+			#naval_speed = 8
 			fuel_consumption = 18
 			build_cost_ic = 640
 		}
 
 		multiply_stats = {
-			naval_speed = 0.3
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 		}
 	}
 
@@ -1668,14 +1668,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 9
+			#naval_speed = 9
 			fuel_consumption = 20
 			build_cost_ic = 720
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 		}
 	}
 
@@ -1685,14 +1685,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 10
+			#naval_speed = 10
 			fuel_consumption = 22
 			build_cost_ic = 800
 		}
 
 		multiply_stats = {
-			naval_speed = 0.4
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 		}
 	}
 
@@ -1701,14 +1701,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 7
+			#naval_speed = 7
 			fuel_consumption = 50
 			build_cost_ic = 1800
 		}
 
 		multiply_stats = {
-			naval_speed = 0.15
-			reliability = -0.2
+			naval_speed = 0.05
+			#reliability = -0.2
 		}
 	}
 
@@ -1718,14 +1718,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 10
+			#naval_speed = 10
 			fuel_consumption = 55
 			build_cost_ic = 2200
 		}
 
 		multiply_stats = {
-			naval_speed = 0.2
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -1735,14 +1735,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 11
+			#naval_speed = 11
 			fuel_consumption = 60
 			build_cost_ic = 2600
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 
 		}
 	}
@@ -1753,14 +1753,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 12
+			#naval_speed = 12
 			fuel_consumption = 65
 			build_cost_ic = 3000
 		}
 
 		multiply_stats = {
-			naval_speed = 0.3
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 
 		}
 	}
@@ -1771,14 +1771,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 13
+			#naval_speed = 13
 			fuel_consumption = 70
 			build_cost_ic = 3400
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 
 		}
 	}
@@ -1789,14 +1789,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 14
+			#naval_speed = 14
 			fuel_consumption = 75
 			build_cost_ic = 3800
 		}
 
 		multiply_stats = {
-			naval_speed = 0.4
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 
 		}
 	}
@@ -1806,14 +1806,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 52
 			build_cost_ic = 400
 		}
 
 		multiply_stats = {
-			naval_speed = 0.15
-			reliability = -0.2
+			naval_speed = 0.05
+			#reliability = -0.2
 		}
 	}
 
@@ -1823,14 +1823,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 56
 			build_cost_ic = 480
 		}
 
 		multiply_stats = {
-			naval_speed = 0.2
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -1840,14 +1840,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 60
 			build_cost_ic = 560
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 		}
 	}
 
@@ -1857,14 +1857,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 64
 			build_cost_ic = 640
 		}
 
 		multiply_stats = {
-			naval_speed = 0.3
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 		}
 	}
 
@@ -1874,14 +1874,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 68
 			build_cost_ic = 720
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 		}
 	}
 
@@ -1891,14 +1891,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			fuel_consumption = 72
 			build_cost_ic = 800
 		}
 
 		multiply_stats = {
-			naval_speed = 0.4
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 		}
 	}
 
@@ -1909,15 +1909,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 90
 		}
 
 		multiply_stats = {
-			naval_speed = 0.15
-			reliability = -0.2
+			naval_speed = 0.05
+			#reliability = -0.2
 		}
 	}
 
@@ -1927,15 +1927,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1120
 		}
 
 		multiply_stats = {
-			naval_speed = 0.2
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -1945,15 +1945,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1150
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 		}
 	}
 
@@ -1963,15 +1963,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1170
 		}
 
 		multiply_stats = {
-			naval_speed = 0.3
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 		}
 	}
 
@@ -1981,15 +1981,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1200
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 		}
 	}
 
@@ -1999,15 +1999,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1230
 		}
 
 		multiply_stats = {
-			naval_speed = 0.4
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 		}
 	}
 
@@ -2016,7 +2016,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 90
@@ -2024,7 +2024,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = 0.05
-			reliability = -0.2
+			#reliability = -0.2
 
 		}
 	}
@@ -2035,15 +2035,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1120
 		}
 
 		multiply_stats = {
-			naval_speed = 0.06
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -2053,15 +2053,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1150
 		}
 
 		multiply_stats = {
-			naval_speed = 0.07
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 		}
 	}
 
@@ -2071,15 +2071,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1170
 		}
 
 		multiply_stats = {
-			naval_speed = 0.08
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 		}
 	}
 
@@ -2089,15 +2089,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1200
 		}
 
 		multiply_stats = {
-			naval_speed = 0.09
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 		}
 	}
 
@@ -2107,15 +2107,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1230
 		}
 
 		multiply_stats = {
-			naval_speed = 0.1
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 		}
 	}
 
@@ -2124,15 +2124,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1400
 		}
 
 		multiply_stats = {
-			naval_speed = 0.15
-			reliability = -0.2
+			naval_speed = 0.05
+			#reliability = -0.2
 		}
 	}
 
@@ -2142,15 +2142,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 6
+			#naval_speed = 6
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1480
 		}
 
 		multiply_stats = {
-			naval_speed = 0.2
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -2160,15 +2160,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 7
+			#naval_speed = 7
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1550
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 		}
 	}
 
@@ -2178,15 +2178,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 8
+			#naval_speed = 8
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1670
 		}
 
 		multiply_stats = {
-			naval_speed = 0.3
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 		}
 	}
 
@@ -2196,15 +2196,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 9
+			#naval_speed = 9
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1790
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 		}
 	}
 
@@ -2214,15 +2214,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 10
+			#naval_speed = 10
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1910
 		}
 
 		multiply_stats = {
-			naval_speed = 0.4
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 		}
 	}
 
@@ -2231,15 +2231,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 7
+			#naval_speed = 7
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 2800
 		}
 
 		multiply_stats = {
-			naval_speed = 0.15
-			reliability = -0.2
+			naval_speed = 0.05
+			#reliability = -0.2
 		}
 	}
 
@@ -2249,15 +2249,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 10
+			#naval_speed = 10
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 3200
 		}
 
 		multiply_stats = {
-			naval_speed = 0.2
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -2267,15 +2267,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 11
+			#naval_speed = 11
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 3600
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 
 		}
 	}
@@ -2286,15 +2286,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 12
+			#naval_speed = 12
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 4000
 		}
 
 		multiply_stats = {
-			naval_speed = 0.3
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 
 		}
 	}
@@ -2305,15 +2305,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 13
+			#naval_speed = 13
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 4400
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 
 		}
 	}
@@ -2324,15 +2324,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 14
+			#naval_speed = 14
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 4800
 		}
 
 		multiply_stats = {
-			naval_speed = 0.4
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 
 		}
 	}
@@ -2342,15 +2342,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1400
 		}
 
 		multiply_stats = {
-			naval_speed = 0.15
-			reliability = -0.2
+			naval_speed = 0.05
+			#reliability = -0.2
 		}
 	}
 
@@ -2360,15 +2360,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1480
 		}
 
 		multiply_stats = {
-			naval_speed = 0.2
-			reliability = -0.2
+			naval_speed = 0.10
+			#reliability = -0.2
 		}
 	}
 
@@ -2378,15 +2378,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1550
 		}
 
 		multiply_stats = {
-			naval_speed = 0.25
-			reliability = -0.2
+			naval_speed = 0.15
+			#reliability = -0.2
 		}
 	}
 
@@ -2396,15 +2396,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1670
 		}
 
 		multiply_stats = {
-			naval_speed = 0.3
-			reliability = -0.2
+			naval_speed = 0.20
+			#reliability = -0.2
 		}
 	}
 
@@ -2414,15 +2414,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1770
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
-			reliability = -0.2
+			naval_speed = 0.25
+			#reliability = -0.2
 		}
 	}
 
@@ -2432,15 +2432,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			naval_speed = 5
+			#naval_speed = 5
 			naval_range = 10000
 			fuel_consumption = 0
 			build_cost_ic = 1880
 		}
 
 		multiply_stats = {
-			naval_speed = 0.4
-			reliability = -0.2
+			naval_speed = 0.30
+			#reliability = -0.2
 		}
 	}
 
@@ -2948,88 +2948,8 @@ equipment_modules = {
 
 		add_equipment_type = capital_ship
 		add_stats = {
-			carrier_size = 10
-			build_cost_ic = 2000
-		}
-		manpower = 500 #outside the add_stats section for code reasons
-		multiply_stats = {
-			naval_speed = -0.05
-		}
-		dismantle_cost_ic = 700
-	}
-
-	ship_deck_space_2 = {
-		category = ship_deck_space
-		gfx = ship_deck_space
-
-		add_equipment_type = capital_ship
-		add_stats = {
-			carrier_size = 11
-			build_cost_ic = 2200
-		}
-		manpower = 500 #outside the add_stats section for code reasons
-		multiply_stats = {
-			naval_speed = -0.05
-		}
-		dismantle_cost_ic = 700
-	}
-
-	ship_deck_space_3 = {
-		category = ship_deck_space
-		gfx = ship_deck_space
-
-		add_equipment_type = capital_ship
-		add_stats = {
-			carrier_size = 12
-			build_cost_ic = 2400
-		}
-		manpower = 500 #outside the add_stats section for code reasons
-		multiply_stats = {
-			naval_speed = -0.05
-		}
-		dismantle_cost_ic = 700
-	}
-
-	ship_deck_space_4 = {
-		category = ship_deck_space
-		gfx = ship_deck_space
-
-		add_equipment_type = capital_ship
-		add_stats = {
-			carrier_size = 13
-			build_cost_ic = 2600
-		}
-		manpower = 500 #outside the add_stats section for code reasons
-		multiply_stats = {
-			naval_speed = -0.05
-		}
-		dismantle_cost_ic = 700
-	}
-
-	ship_deck_space_5 = {
-		category = ship_deck_space
-		gfx = ship_deck_space
-
-		add_equipment_type = capital_ship
-		add_stats = {
-			carrier_size = 14
-			build_cost_ic = 2800
-		}
-		manpower = 500 #outside the add_stats section for code reasons
-		multiply_stats = {
-			naval_speed = -0.05
-		}
-		dismantle_cost_ic = 700
-	}
-
-	ship_deck_space_6 = {
-		category = ship_deck_space
-		gfx = ship_deck_space
-
-		add_equipment_type = capital_ship
-		add_stats = {
 			carrier_size = 15
-			build_cost_ic = 3000
+			build_cost_ic = 2000
 		}
 		manpower = 500 #outside the add_stats section for code reasons
 		multiply_stats = {
@@ -3164,7 +3084,7 @@ equipment_modules = {
 
 		add_stats = {
 			armor_value = 20
-			surface_visibility = 8
+			#surface_visibility = 8
 		}
 		dismantle_cost_ic = 4500
 
@@ -3202,7 +3122,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			armor_value = 26
-			surface_visibility = 8
+			#surface_visibility = 8
 		}
 		dismantle_cost_ic = 5500
 	}
@@ -3241,7 +3161,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			armor_value = 32
-			surface_visibility = 8
+			#surface_visibility = 8
 		}
 		dismantle_cost_ic = 6200
 
@@ -3281,7 +3201,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			armor_value = 38
-			surface_visibility = 8
+			#surface_visibility = 8
 		}
 		dismantle_cost_ic = 7500
 
@@ -3321,7 +3241,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			armor_value = 44
-			surface_visibility = 8
+			#surface_visibility = 8
 		}
 		dismantle_cost_ic = 8500
 	}
@@ -3360,7 +3280,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			armor_value = 50
-			surface_visibility = 8
+			#surface_visibility = 8
 		}
 		dismantle_cost_ic = 9500
 
@@ -3370,7 +3290,7 @@ equipment_modules = {
 		category = ship_super_heavy_armor
 
 		multiply_stats = {
-			build_cost_ic = 0.25
+			build_cost_ic = 0.3
 			naval_speed = -0.25
 			max_strength = 0.1
 		}
@@ -3389,8 +3309,8 @@ equipment_modules = {
 		category = ship_super_heavy_armor
 
 		multiply_stats = {
-			build_cost_ic = 0.25
-			naval_speed = -0.25
+			build_cost_ic = 0.3
+			naval_speed = -0.2
 			max_strength = 0.2
 		}
 		build_cost_resources = {
@@ -3409,7 +3329,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			build_cost_ic = 0.25
-			naval_speed = -0.25
+			naval_speed = -0.2
 			max_strength = 0.3
 		}
 		build_cost_resources = {

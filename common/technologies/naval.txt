@@ -671,7 +671,9 @@ technologies = {
 	early_battlecruiser = {
 
 		enable_equipments = {
-			battle_cruiser_1
+			ship_hull_pre_dreadnought
+			ship_hull_cruiser_panzerschiff
+			ship_hull_cruiser_coastal_defense_ship
 		}
 
 		path = {
@@ -701,16 +703,13 @@ technologies = {
 	basic_battlecruiser = {
 
 		enable_equipments = {
-			battle_cruiser_2
+			ship_hull_carrier_conversion_bb
+			ship_hull_carrier_conversion_ca
 		}
 
 		path = {
-			leads_to_tech = improved_battlecruiser
+			leads_to_tech = torpedo_cruiser
 			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = basic_battleship
-			research_cost_coeff = 0.75
 		}
 
 		research_cost = 2
@@ -720,134 +719,6 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = { x = -1 y = 7 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			naval_equipment
-			bc_tech
-		}
-	}
-
-	improved_battlecruiser = {
-
-		enable_equipments = {
-			battle_cruiser_3
-		}
-
-		path = {
-			leads_to_tech = advanced_battlecruiser
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = improved_battleship
-			research_cost_coeff = 0.75
-		}
-
-		research_cost = 2
-		start_year = 1940
-
-		folder = {
-			name = naval_folder
-			position = { x = -1 y = 13 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			naval_equipment
-			bc_tech
-		}
-	}
-
-	advanced_battlecruiser = {
-
-		enable_equipments = {
-			battle_cruiser_4
-		}
-
-		path = {
-			leads_to_tech = semi_modern_battlecruiser
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = advanced_battleship
-			research_cost_coeff = 0.75
-		}
-
-		research_cost = 2
-		start_year = 1944
-
-		folder = {
-			name = naval_folder
-			position = { x = -1 y = 19 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			naval_equipment
-			bc_tech
-		}
-	}
-
-	semi_modern_battlecruiser = {
-
-		enable_equipments = {
-			battle_cruiser_5
-		}
-
-		path = {
-			leads_to_tech = modern_battlecruiser
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = semi_modern_battleship
-			research_cost_coeff = 0.75
-		}
-
-		research_cost = 2
-		start_year = 1948
-
-		folder = {
-			name = naval_folder
-			position = { x = -1 y = 25 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			naval_equipment
-			bc_tech
-		}
-	}
-
-	modern_battlecruiser = {
-
-		enable_equipments = {
-			battle_cruiser_6
-		}
-
-		path = {
-			leads_to_tech = modern_battleship
-			research_cost_coeff = 0.75
-		}
-
-		research_cost = 2
-		start_year = 1952
-
-		folder = {
-			name = naval_folder
-			position = { x = -1 y = 31 }
 		}
 
 		ai_will_do = {
@@ -900,10 +771,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = basic_battlecruiser
-			research_cost_coeff = 0.75
-		}
-		path = {
 			leads_to_tech = heavy_battleship
 			research_cost_coeff = 0.75
 		}
@@ -936,10 +803,6 @@ technologies = {
 			leads_to_tech = advanced_battleship
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = improved_battlecruiser
-			research_cost_coeff = 0.75
-		}
 
 		research_cost = 2
 		start_year = 1940
@@ -968,14 +831,6 @@ technologies = {
 		path = {
 			leads_to_tech = semi_modern_battleship
 			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = advanced_battlecruiser
-			research_cost_coeff = 0.75
-		}
-		path = {
-			leads_to_tech = heavy_battleship2
-			research_cost_coeff = 0.75
 		}
 
 		research_cost = 2
@@ -1007,7 +862,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = semi_modern_battlecruiser
+			leads_to_tech = heavy_battleship2
 			research_cost_coeff = 0.75
 		}
 
@@ -1037,10 +892,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = modern_battlecruiser
-			research_cost_coeff = 0.75
-		}
-		path = {
-			leads_to_tech = heavy_battleship3
 			research_cost_coeff = 0.75
 		}
 
@@ -1097,43 +948,13 @@ technologies = {
 			SH_battleship_2
 		}
 
-		path = {
-			leads_to_tech = heavy_battleship3
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1948
 
 		folder = {
 			name = naval_folder
-			position = { x = 3 y = 19 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			naval_equipment
-			shbb_tech
-		}
-	}
-
-	heavy_battleship3 = {
-
-		enable_equipments = {
-			SH_battleship_3
-		}
-
-		research_cost = 2
-
-		start_year = 1952
-
-		folder = {
-			name = naval_folder
-			position = { x = 3 y = 31 }
+			position = { x = 3 y = 25 }
 		}
 
 		ai_will_do = {
@@ -1761,7 +1582,12 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1940
+
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = 13 }
+		}
 
 		# only from focus!!! #####
 		allow = {
@@ -1839,7 +1665,7 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 
-		ai_will_do = {
+		 ai_will_do = {
 			factor = 1
 			modifier = {
 				has_war = yes
