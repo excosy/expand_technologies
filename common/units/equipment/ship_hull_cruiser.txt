@@ -106,7 +106,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 15
-		naval_speed = 25
+		naval_speed = 40
 		reliability = 0.80
 
 		naval_range = 2500
@@ -131,6 +131,13 @@ equipments = {
 		alias = light_cruiser_1
 		priority = 1900
 
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_anti_air_upgrade
+		}
+
 		module_slots = inherit
 	}
 
@@ -141,8 +148,16 @@ equipments = {
 		alias = light_cruiser_2
 		priority = 1900
 		#parent = ship_hull_cruiser_1
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_anti_air_upgrade
+		}
+
 		manpower = 800
-		naval_speed = 26
+		#naval_speed = 26
 		reliability = 0.85
 		build_cost_ic = 2000
 		naval_range = 3000
@@ -196,7 +211,15 @@ equipments = {
 		alias = light_cruiser_3
 		priority = 1900
 		#parent = ship_hull_cruiser_2
-		naval_speed = 27
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_anti_air_upgrade
+		}
+
+		#naval_speed = 27
 		build_cost_ic = 2200
 		reliability = 0.90
 		max_strength = 140
@@ -252,7 +275,15 @@ equipments = {
 		alias = light_cruiser_4
 		priority = 1900
 		#parent = ship_hull_cruiser_3
-		naval_speed = 28
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_anti_air_upgrade
+		}
+
+		#naval_speed = 28
 		reliability = 0.95
 		manpower = 1400
 		build_cost_ic = 2400
@@ -308,7 +339,15 @@ equipments = {
 		alias = light_cruiser_5
 		priority = 1900
 		#parent = ship_hull_cruiser_4
-		naval_speed = 29
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_anti_air_upgrade
+		}
+
+		#naval_speed = 29
 		reliability = 1
 		manpower = 1600
 		build_cost_ic = 2600
@@ -366,7 +405,15 @@ equipments = {
 		alias = light_cruiser_6
 		priority = 1900
 		#parent = ship_hull_cruiser_5
-		naval_speed = 30
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_anti_air_upgrade
+		}
+
+		#naval_speed = 30
 		reliability = 1.05
 		manpower = 1800
 		build_cost_ic = 2800
@@ -426,6 +473,13 @@ equipments = {
 		archetype = ship_hull_cruiser
 		alias = torpedo_cruiser
 		priority = 1850
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_gun_upgrade
+			ship_anti_air_upgrade
+		}
 
 		interface_category = interface_category_screen_ships
 		module_slots = {
@@ -487,7 +541,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 15
-		naval_speed = 25
+		#naval_speed = 25
 		reliability = 0.9
 
 		naval_range = 4000
@@ -508,9 +562,17 @@ equipments = {
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1850
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
 		manpower = 1800
 		build_cost_ic = 3500
-		naval_speed = 20
+		#naval_speed = 20
 		surface_visibility = 22
 		naval_range = 7500
 		max_strength = 220
@@ -578,6 +640,13 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1850
 
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
 		manpower = 1800
 		build_cost_ic = 3500
 		resources = {
@@ -586,7 +655,7 @@ equipments = {
 		}
 
 		hg_attack = 0
-		naval_speed = 15
+		#naval_speed = 15
 		reliability = 0.80
 		surface_visibility = 20
 		naval_range = 1500
@@ -642,7 +711,7 @@ equipments = {
 			front_1_custom_slot = empty
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_medium_battery_1
+			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 	}
 
@@ -655,14 +724,20 @@ equipments = {
 		alias = heavy_cruiser_1
 		priority = 1900
 
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
 		module_slots = inherit
 		default_modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
-			mid_1_custom_slot = ship_medium_battery_1
-			mid_2_custom_slot = ship_medium_battery_1
-			rear_1_custom_slot = ship_medium_battery_1
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_light_medium_battery_1
 		}
-
 	}
 
 	ship_hull_cruiser_2_capital = {
@@ -672,8 +747,16 @@ equipments = {
 		alias = heavy_cruiser_2
 		priority = 1900
 		#parent = ship_hull_cruiser_1_capital
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
 		manpower = 800
-		naval_speed = 25
+		#naval_speed = 25
 		reliability = 0.85
 		build_cost_ic = 2000
 		naval_range = 3000
@@ -712,12 +795,11 @@ equipments = {
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_secondaries_slot = empty
 			fixed_ship_armor_slot = ship_armor_cruiser_2
-			front_1_custom_slot = ship_medium_battery_2
-			mid_1_custom_slot = ship_medium_battery_2
-			mid_2_custom_slot = ship_medium_battery_2
-			rear_1_custom_slot = ship_medium_battery_2
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_light_medium_battery_2
+			mid_2_custom_slot = ship_light_medium_battery_2
+			rear_1_custom_slot = ship_light_medium_battery_2
 		}
-
 	}
 
 	ship_hull_cruiser_3_capital = {
@@ -727,7 +809,15 @@ equipments = {
 		alias = heavy_cruiser_3
 		priority = 1900
 		#parent = ship_hull_cruiser_2_capital
-		naval_speed = 27
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		#naval_speed = 27
 		build_cost_ic = 2200
 		reliability = 0.90
 		max_strength = 140
@@ -768,11 +858,11 @@ equipments = {
 			fixed_ship_engine_slot = cruiser_ship_engine_3
 			fixed_ship_secondaries_slot = empty
 			fixed_ship_armor_slot = ship_armor_cruiser_3
-			front_1_custom_slot = ship_medium_battery_3
-			mid_1_custom_slot = ship_medium_battery_3
-			mid_2_custom_slot = ship_medium_battery_3
-			rear_1_custom_slot = ship_medium_battery_3
-			rear_2_custom_slot = ship_medium_battery_3
+			front_1_custom_slot = ship_light_medium_battery_3
+			mid_1_custom_slot = ship_light_medium_battery_3
+			mid_2_custom_slot = ship_light_medium_battery_3
+			rear_1_custom_slot = ship_light_medium_battery_3
+			rear_2_custom_slot = ship_light_medium_battery_3
 		}
 	}
 
@@ -783,7 +873,15 @@ equipments = {
 		alias = heavy_cruiser_4
 		priority = 1900
 		#parent = ship_hull_cruiser_3_capital
-		naval_speed = 28
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		#naval_speed = 28
 		reliability = 0.95
 		manpower = 1400
 		build_cost_ic = 2400
@@ -824,11 +922,11 @@ equipments = {
 			fixed_ship_engine_slot = cruiser_ship_engine_4
 			fixed_ship_secondaries_slot = empty
 			fixed_ship_armor_slot = ship_armor_cruiser_4
-			front_1_custom_slot = ship_medium_battery_4
-			mid_1_custom_slot = ship_medium_battery_4
-			mid_2_custom_slot = ship_medium_battery_4
-			rear_1_custom_slot = ship_medium_battery_4
-			rear_2_custom_slot = ship_medium_battery_4
+			front_1_custom_slot = ship_light_medium_battery_4
+			mid_1_custom_slot = ship_light_medium_battery_4
+			mid_2_custom_slot = ship_light_medium_battery_4
+			rear_1_custom_slot = ship_light_medium_battery_4
+			rear_2_custom_slot = ship_light_medium_battery_4
 		}
 	}
 
@@ -839,7 +937,15 @@ equipments = {
 		alias = heavy_cruiser_5
 		priority = 1900
 		#parent = ship_hull_cruiser_4_capital
-		naval_speed = 29
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		#naval_speed = 29
 		reliability = 1
 		manpower = 1600
 		build_cost_ic = 2600
@@ -881,12 +987,12 @@ equipments = {
 			fixed_ship_engine_slot = cruiser_ship_engine_5
 			fixed_ship_secondaries_slot = empty
 			fixed_ship_armor_slot = ship_armor_cruiser_5
-			front_1_custom_slot = ship_medium_battery_5
-			front_2_custom_slot = ship_medium_battery_5
-			mid_1_custom_slot = ship_medium_battery_5
-			mid_2_custom_slot = ship_medium_battery_5
-			rear_1_custom_slot = ship_medium_battery_5
-			rear_2_custom_slot = ship_medium_battery_5
+			front_1_custom_slot = ship_light_medium_battery_5
+			front_2_custom_slot = ship_light_medium_battery_5
+			mid_1_custom_slot = ship_light_medium_battery_5
+			mid_2_custom_slot = ship_light_medium_battery_5
+			rear_1_custom_slot = ship_light_medium_battery_5
+			rear_2_custom_slot = ship_light_medium_battery_5
 		}
 	}
 
@@ -897,7 +1003,15 @@ equipments = {
 		alias = heavy_cruiser_6
 		priority = 1900
 		#parent = ship_hull_cruiser_5_capital
-		naval_speed = 30
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		#naval_speed = 30
 		reliability = 1.05
 		manpower = 1800
 		build_cost_ic = 2800
@@ -939,12 +1053,12 @@ equipments = {
 			fixed_ship_engine_slot = cruiser_ship_engine_6
 			fixed_ship_secondaries_slot = empty
 			fixed_ship_armor_slot = ship_armor_cruiser_6
-			front_1_custom_slot = ship_medium_battery_6
-			front_2_custom_slot = ship_medium_battery_6
-			mid_1_custom_slot = ship_medium_battery_6
-			mid_2_custom_slot = ship_medium_battery_6
-			rear_1_custom_slot = ship_medium_battery_6
-			rear_2_custom_slot = ship_medium_battery_6
+			front_1_custom_slot = ship_light_medium_battery_6
+			front_2_custom_slot = ship_light_medium_battery_6
+			mid_1_custom_slot = ship_light_medium_battery_6
+			mid_2_custom_slot = ship_light_medium_battery_6
+			rear_1_custom_slot = ship_light_medium_battery_6
+			rear_2_custom_slot = ship_light_medium_battery_6
 		}
 	}
 }
